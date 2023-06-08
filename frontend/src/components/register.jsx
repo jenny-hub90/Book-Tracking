@@ -11,7 +11,7 @@ import {
   MDBInput,
 } from "mdb-react-ui-kit";
 
-const login = () => {
+const register = () => {
   const containerStyles = {
     display: "flex",
     alignItems: "center",
@@ -27,16 +27,15 @@ const login = () => {
   const h5 = {
     fontFamily: "'Poppins', sans-serif",
     letterSpacing: "1px",
-    margin: "50px",
+    margin: "30px",
   };
-
   return (
     <MDBContainer className="my-5">
       <MDBCard>
         <MDBRow className="g-0">
           <MDBCol md="6">
             <MDBCardImage
-              src="./images/books.avif"
+              src="./images/20490.jpg"
               alt="login form"
               className="rounded-start w-100 h-100"
             />
@@ -54,8 +53,33 @@ const login = () => {
               </div>
 
               <h5 className="fw-normal pb-3 text-center" style={h5}>
-                Sign into your account
+                Sign up to register
               </h5>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <label
+                  htmlFor="username"
+                  style={{
+                    marginBottom: "5px",
+                    marginLeft: "150px",
+                    fontFamily: "'Poppins', sans-serif",
+                  }}
+                >
+                  Username
+                </label>
+                <MDBInput
+                  wrapperClass="mb-2"
+                  id="formControlLg"
+                  type="username"
+                  size="lg"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    borderBottom: "2px solid #707672",
+                    width: "300px",
+                    margin: "auto",
+                  }}
+                />
+              </div>
               <div style={{ display: "flex", flexDirection: "column" }}>
                 <label
                   htmlFor="email"
@@ -68,7 +92,7 @@ const login = () => {
                   Email address
                 </label>
                 <MDBInput
-                  wrapperClass="mb-4"
+                  wrapperClass="mb-2"
                   id="formControlLg"
                   type="email"
                   size="lg"
@@ -93,7 +117,7 @@ const login = () => {
                   Password
                 </label>
                 <MDBInput
-                  wrapperClass="mb-4"
+                  wrapperClass="mb-2"
                   id="formControlLg"
                   type="password"
                   size="lg"
@@ -106,17 +130,31 @@ const login = () => {
                   }}
                 />
               </div>
-              <a
-                className="small text-muted"
-                href="#!"
-                style={{
-                  marginLeft: "250px",
-                  marginBottom: "20px",
-                  fontFamily: "'Poppins', sans-serif",
-                }}
-              >
-                Forgot password?
-              </a>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <label
+                  htmlFor="password"
+                  style={{
+                    marginBottom: "5px",
+                    marginLeft: "150px",
+                    fontFamily: "'Poppins', sans-serif",
+                  }}
+                >
+                  Re-enter Password
+                </label>
+                <MDBInput
+                  wrapperClass="mb-2"
+                  id="formControlLg"
+                  type="re-enterpassword"
+                  size="lg"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    borderBottom: "2px solid #707672",
+                    width: "300px",
+                    margin: "auto",
+                  }}
+                />
+              </div>
               <MDBBtn
                 className="mb-4 px-5"
                 color="dark"
@@ -124,14 +162,14 @@ const login = () => {
                 style={{
                   backgroundColor: "#696969",
                   border: "none",
-                  width: "150px",
+                  width: "200px",
                   margin: "auto",
                   borderRadius: "30px",
                   fontFamily: "'Poppins', sans-serif",
                   fontSize: "15px",
                 }}
               >
-                Login
+                Sign Up
               </MDBBtn>
 
               <p
@@ -141,15 +179,15 @@ const login = () => {
                   fontFamily: "'Poppins', sans-serif",
                 }}
               >
-                Don't have an account?{" "}
+                ALready have an account?{" "}
                 <Link
-                  to="/register"
+                  to="/login"
                   style={{
                     color: "#393f81",
                     fontFamily: "'Poppins', sans-serif",
                   }}
                 >
-                  Register here
+                  Login here
                 </Link>
               </p>
             </MDBCardBody>
@@ -160,4 +198,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default register;
