@@ -57,6 +57,56 @@ const register = () => {
               </h5>
               <div style={{ display: "flex", flexDirection: "column" }}>
                 <label
+                  htmlFor="firstname"
+                  style={{
+                    marginBottom: "5px",
+                    marginLeft: "150px",
+                    fontFamily: "'Poppins', sans-serif",
+                  }}
+                >
+                  First Name
+                </label>
+                <MDBInput
+                  wrapperClass="mb-2"
+                  id="formControlLg"
+                  type="firstname"
+                  size="lg"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    borderBottom: "2px solid #707672",
+                    width: "300px",
+                    margin: "auto",
+                  }}
+                />
+              </div>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <label
+                  htmlFor="lastname"
+                  style={{
+                    marginBottom: "5px",
+                    marginLeft: "150px",
+                    fontFamily: "'Poppins', sans-serif",
+                  }}
+                >
+                  Last Name
+                </label>
+                <MDBInput
+                  wrapperClass="mb-2"
+                  id="formControlLg"
+                  type="lastname"
+                  size="lg"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    borderBottom: "2px solid #707672",
+                    width: "300px",
+                    margin: "auto",
+                  }}
+                />
+              </div>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <label
                   htmlFor="username"
                   style={{
                     marginBottom: "5px",
