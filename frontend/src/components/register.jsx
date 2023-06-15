@@ -38,6 +38,7 @@ const register = () => {
               src="./images/20490.jpg"
               alt="login form"
               className="rounded-start w-100 h-100"
+              style={{objectFit:"cover"}}
             />
           </MDBCol>
 
@@ -64,7 +65,7 @@ const register = () => {
                     fontFamily: "'Poppins', sans-serif",
                   }}
                 >
-                  First Name
+                  Firstname
                 </label>
                 <MDBInput
                   wrapperClass="mb-2"
@@ -89,7 +90,7 @@ const register = () => {
                     fontFamily: "'Poppins', sans-serif",
                   }}
                 >
-                  Last Name
+                  Lastname
                 </label>
                 <MDBInput
                   wrapperClass="mb-2"
@@ -139,7 +140,7 @@ const register = () => {
                     fontFamily: "'Poppins', sans-serif",
                   }}
                 >
-                  Email address
+                  Emailaddress
                 </label>
                 <MDBInput
                   wrapperClass="mb-2"

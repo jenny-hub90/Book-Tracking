@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="container1">
+      <div className="container1" style={{backgroundColor:"#A4C4B5"}}>
         <div class="row1">
           <div class="imgWrapper">
             <img src="../images/book.jpeg" alt="" />

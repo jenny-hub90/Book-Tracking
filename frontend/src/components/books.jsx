@@ -3,6 +3,12 @@ import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
 
 const books = () => {
+  const h1 = {
+    textAlign: "center",
+    fontFamily: "'Dancing Script', cursive",
+    fontWeight: "bold",
+  };
+  
   const images = {
     width: "100%",
     height: "300px",
@@ -63,6 +69,7 @@ const books = () => {
   return (
     <>
       <Navbar />
+      <h1 style={h1}>All Books</h1>
       <div className="d-flex flex-wrap  justify-content-center my-3 mx-3" style={{ gap: "20px" }}>
         <div className="card" style={card}>
           <img

@@ -5,7 +5,10 @@ import Register from "./components/register";
 import Books from "./components/books";
 import AddBooks from "./components/addBooks";
 import AllBooks from "./components/allBooks";
-import Home from "./components/Pages/home"
+import Home from "./components/Pages/home";
+import AllUsers from "./components/allUsers";
+import ForgotPasswod from "./components/forgotPassword";
+import ResetPassword from "./components/resetPassword";
 
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
         <Route path="/books" element={<Books />} />
         <Route path="/addBooks" element={<AddBooks />} />
         <Route path="/allBooks" element={<AllBooks />} />
+        <Route path="/allUsers" element={<AllUsers/>} />
+        <Route path="/forgotPassword" element ={<ForgotPasswod/>}/>
+        <Route path="/resetPassword" element ={<ResetPassword/>}/>
       </Routes>
     </BrowserRouter>
   );

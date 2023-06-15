@@ -57,6 +57,7 @@ const addBooks = () => {
     margin: "auto",
     textAlign: "center",
   };
+ 
   return (
     <>
       <Navbar />
@@ -86,6 +87,10 @@ const addBooks = () => {
               id="exampleInputPassword1"
               style={inputStyle}
             />
+          </div>
+          <div class="mb-3" style={labelContainer}>
+            <label for="img"  class="form-label" style={label}>Book Image</label>
+            <input type="file" id="img" name="img" accept="image/*" style={{marginLeft:"50px"}}/>
           </div>
           <div style={radioContainer}>
             <div class="mb-3 form-check" style={{ margin: "5px" }}>
