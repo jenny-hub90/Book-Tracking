@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
 const Home = () => {
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    fetch("http://localhost:8000/message")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message));
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="container1" style={{backgroundColor:"#A4C4B5"}}>
+      <div className="container1" style={{ backgroundColor: "#A4C4B5" }}>
+        <div>
+          <h1>{message}</h1>
+        </div>
         <div class="row1">
           <div class="imgWrapper">
             <img src="../images/book.jpeg" alt="" />
