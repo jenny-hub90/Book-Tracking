@@ -50,6 +50,7 @@ const books = () => {
     textAlign: "center",
     color: "#fff",
     fontWeight: "normal",
+    padding:"3px"
   };
   const statusU = {
     width: "80px",
@@ -59,6 +60,7 @@ const books = () => {
     textAlign: "center",
     color: "#fff",
     fontWeight: "normal",
+    padding:"3px"
   };
 
   const card = {
@@ -373,7 +375,7 @@ const books = () => {
         </div>
         <div className="card" style={card}>
           <img
-            src="./images/13richard-ford-cover-jumbo.jpg"
+            src="./images/images (5).jpeg"
             style={images}
             className="card-img-top"
             alt="..."
@@ -398,7 +400,7 @@ const books = () => {
         </div>
         <div className="card" style={card}>
           <img
-            src="./images/13richard-ford-cover-jumbo.jpg"
+            src="./images/images.jpeg"
             style={images}
             className="card-img-top"
             alt="..."
@@ -424,7 +426,7 @@ const books = () => {
 
         <div className="card" style={card}>
           <img
-            src="./images/13richard-ford-cover-jumbo.jpg"
+            src="./images/images (4).jpeg"
             style={images}
             className="card-img-top"
             alt="..."

@@ -9,6 +9,8 @@ import Home from "./components/Pages/home";
 import AllUsers from "./components/allUsers";
 import ForgotPasswod from "./components/forgotPassword";
 import ResetPassword from "./components/resetPassword";
+import AddReviews from "./components/addReviews";
+import AllReviews from "./components/allReviews";
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
         <Route path="/allUsers" element={<AllUsers/>} />
         <Route path="/forgotPassword" element ={<ForgotPasswod/>}/>
         <Route path="/resetPassword" element ={<ResetPassword/>}/>
+        <Route path="/addReviews" element ={<AddReviews/>}/>
+        <Route path="/allReviews" element={<AllReviews/>} />
       </Routes>
     </BrowserRouter>
   );
