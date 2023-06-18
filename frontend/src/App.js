@@ -11,6 +11,7 @@ import ForgotPasswod from "./components/forgotPassword";
 import ResetPassword from "./components/resetPassword";
 import AddReviews from "./components/addReviews";
 import AllReviews from "./components/allReviews";
+import SendOtp from "./components/sendOtp";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/resetPassword" element ={<ResetPassword/>}/>
         <Route path="/addReviews" element ={<AddReviews/>}/>
         <Route path="/allReviews" element={<AllReviews/>} />
+        <Route path="/sendOtp" element={<SendOtp/>} />
       </Routes>
     </BrowserRouter>
   );
