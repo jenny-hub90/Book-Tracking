@@ -15,6 +15,9 @@ app.use(express.json());
 const bookRoute = require('./routes/addBookRoutes')
 app.use("/", bookRoute)
 
+const reviewRoute = require('./routes/addReviewRoutes')
+app.use("/", reviewRoute)
+
 app.get("/message", (req, res) => {
   res.json({ message: "Hello from server!" });
 });
