@@ -1,8 +1,28 @@
-import React from "react";
+import {useState,useEffect} from "react";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
+import axios from "axios";
 
-const allReview = () => {
+
+const AllReview = () => {
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        
+        const response = await axios.get('http://localhost:8000/view/reviews');  
+        setReviews(response.data);
+      } catch (error) {
+       
+        console.error('Error fetching reviews:', error);
+      }
+    };
+
+    fetchReviews();
+  }, []);
+
+
   const h1 = {
     textAlign: "center",
     fontFamily: "'Dancing Script', cursive",
@@ -160,4 +180,4 @@ const allReview = () => {
   );
 };
 
-export default allReview;
+export default AllReview;

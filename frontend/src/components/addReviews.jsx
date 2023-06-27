@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
+import axios from "axios";
 
-const addReview = () => {
+const AddReview = () => {
+  
+  const [fullname, setFullname] = useState(''); 
+  const [feedback, setFeedback] = useState(''); 
+  const [image, setImage] = useState('');
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const reviewData ={
+      fullname,
+      feedback,
+    };
+
+    try{
+      const response = await axios.post('http://localhost:8000/add/reviews', reviewData);
+      console.log(response.data);
+
+      setFullname('');
+      setFeedback('');
+
+    }catch (error) {
+      console.error('Error adding review:', error);
+    }
+  };
   const button = {
     backgroundColor: "#707672",
     border: "none",
@@ -51,13 +76,15 @@ const addReview = () => {
     textAlign: "center",
   };
 
+
+
   return (
     <>
       <Navbar />
       <div style={card}>
         <h1 style={h1}>Reviews</h1>
         <h2 style={h2}>Add Review</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div class="mb-3" style={labelContainer}>
             <label for="exampleInputEmail1" class="form-label" style={label}>
               Fullname
@@ -109,4 +136,4 @@ const addReview = () => {
   );
 };
 
-export default addReview;
+export default AddReview;

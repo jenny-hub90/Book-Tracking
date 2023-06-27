@@ -1,17 +1,17 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./components/login";
-import Register from "./components/register";
-import Books from "./components/books";
-import AddBooks from "./components/addBooks";
-import AllBooks from "./components/allBooks";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import Books from "./components/Books";
+import AddBooks from "./components/AddBooks";
+import AllBooks from "./components/AllBooks";
 import Home from "./components/Pages/home";
-import AllUsers from "./components/allUsers";
-import ForgotPasswod from "./components/forgotPassword";
-import ResetPassword from "./components/resetPassword";
-import AddReviews from "./components/addReviews";
-import AllReviews from "./components/allReviews";
-import SendOtp from "./components/sendOtp";
+import AllUsers from "./components/AllUsers";
+import ForgotPasswod from "./components/ForgotPassword";
+import ResetPassword from "./components/ResetPassword";
+import AddReviews from "./components/AddReviews";
+import AllReviews from "./components/AllReviews";
+import SendOtp from "./components/SendOtp";
 
 
 function App() {
