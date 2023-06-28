@@ -28,6 +28,17 @@ const AddReview = () => {
       console.error('Error adding review:', error);
     }
   };
+
+  const upload = async e=>{
+    try{
+        const formData = new FormData();
+        formData.append("file", image);
+        const res = await axios.post(" http://localhost:8000/upload", formData)
+        return res.data;
+    }catch(err){
+        console.log(err);
+    }
+  }
   const button = {
     backgroundColor: "#707672",
     border: "none",
